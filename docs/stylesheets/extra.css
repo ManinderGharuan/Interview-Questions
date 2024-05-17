@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("./fonts/Montserrat-Regular.ttf") format("woff");
+  font-display: swap;
+}
+
+:root {
+  --md-primary-fg-color: #55198b;
+  --md-text-font: "Montserrat";
+}

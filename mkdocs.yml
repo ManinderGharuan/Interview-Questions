@@ -1,0 +1,44 @@
+site_name: Interview Questions
+# site_description:
+site_author: Maninder Singh
+
+extra_css:
+  - stylesheets/extra.css
+
+theme:
+  name: material
+  logo: images/favicon-32x32.png
+  favicon: images/favicon.ico
+  language: en
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+
+  palette:
+    primary: custom
+
+  font:
+    code: Roboto Mono
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://manindergharuan.github.io
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/maninder-singh-a617b2110/
+
+nav:
+  - NodeJS: index.md
+  - Javascript: javascript.md
+  - ReactJS: reactjs.md
+  - Problems: problems.md
+
+copyright: >
+  &copy; <a href="https://github.com/ManinderGhauran" target="_blank" rel="noopener">Maninder Singh</a>
