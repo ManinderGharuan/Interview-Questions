@@ -291,6 +291,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    NodeJS
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -300,6 +311,97 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-handle-concurrency-in-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to handle concurrency in NodeJS?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-event-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Event Loop?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-callback-hell" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is callback hell?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-packagejson-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is package.json file?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-jwt" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is JWT?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-build-a-microservices-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to build a microservices architecture?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-the-middleware-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are the middleware functions?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-handle-cache-in-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to handle cache in Nodejs?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -385,6 +487,86 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-handle-concurrency-in-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to handle concurrency in NodeJS?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-event-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Event Loop?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-callback-hell" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is callback hell?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-packagejson-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is package.json file?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-jwt" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is JWT?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-build-a-microservices-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to build a microservices architecture?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-the-middleware-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are the middleware functions?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-handle-cache-in-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to handle cache in Nodejs?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -399,6 +581,83 @@
 
 
 <h1 id="nodejs">Nodejs</h1>
+<h2 id="how-to-handle-concurrency-in-nodejs">How to handle concurrency in NodeJS?</h2>
+<ul>
+<li>Nodejs can support concurrency by concept of event, callbacks, Promises and async/await.</li>
+<li>Nodejs uses an event loop to maintain concurrency and perform non-blocking I/O operations.</li>
+</ul>
+<h2 id="what-is-event-loop">What is Event Loop?</h2>
+<p>The event loop allows nodejs to perform non-blocking I/O operations.</p>
+<ul>
+<li>Event loop is an endless loop, which waits for tasks, executes them and then sleeps until it receives more tasks.</li>
+<li>Event loop execute tasks from <mark>event queue</mark> only when <mark>call stack</mark> is empty.</li>
+<li>Event loop allow us to use callbacks and promises.</li>
+</ul>
+<figure>
+  <img alt="Event Loop Diagram" src="/images/event-loop.png" />
+</figure>
+<h2 id="what-is-callback-hell">What is callback hell?</h2>
+<ul>
+<li>The asynchronous function requires callbacks as a return parameter.</li>
+<li>When multiple asynchronous functions are chained together then callback hell situation comes up.</li>
+</ul>
+<div class="language-js highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nx">getData</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">){</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">    </span><span class="nx">getMoreData</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">b</span><span class="p">){</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">        </span><span class="nx">getMoreData</span><span class="p">(</span><span class="nx">b</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">c</span><span class="p">){</span><span class="w"> </span><span class="nx">Reactor</span><span class="w"> </span><span class="nx">Pattern</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nx">Node</span><span class="p">.</span><span class="nx">js</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">            </span><span class="nx">getMoreData</span><span class="p">(</span><span class="nx">c</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">d</span><span class="p">){</span><span class="w"> </span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">                </span><span class="nx">getMoreData</span><span class="p">(</span><span class="nx">d</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span><span class="w"> </span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">                    </span><span class="p">...</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">                </span><span class="p">});</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">            </span><span class="p">});</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">        </span><span class="p">});</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">    </span><span class="p">});</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="p">});</span>
+</span></code></pre></div></td></tr></table></div>
+<h2 id="what-is-packagejson-file">What is package.json file?</h2>
+<ul>
+<li>The package.json file in Nodejs projects contains valuable information, such as project metadata and dependencies.</li>
+<li>File used to managing project modules, scripts, version control.</li>
+</ul>
+<h2 id="what-is-jwt">What is JWT?</h2>
+<ul>
+<li>JWT (JSON Web Token) is an open standard that defines a compact and self-contained way for securily transfer information as JSON object.</li>
+<li>JWT token can be trusted because it is digitaly signed.</li>
+</ul>
+<h2 id="how-to-build-a-microservices-architecture">How to build a microservices architecture?</h2>
+<ul>
+<li>Microservices are many small services responsible for one functionality.</li>
+</ul>
+<figure>
+  <img alt="Monolithic vs Microservices" src="/images/monolithic-and-microservices-architecture.jpg" />
+</figure>
+<h2 id="what-are-the-middleware-functions">What are the middleware functions?</h2>
+<ul>
+<li>Functions that have access to the <mark>request object (req)</mark>, the <mark>response object (res)</mark> and the <strong>next</strong> function.</li>
+<li>Middleware can<ul>
+<li>Execute any code</li>
+<li>Make changes to the request and response</li>
+<li>End the request-response cycle</li>
+<li>Call the next middleware in the stack</li>
+</ul>
+</li>
+</ul>
+<h2 id="how-to-handle-cache-in-nodejs">How to handle cache in Nodejs?</h2>
+<ul>
+<li>Cache is used to store frequently accessed data in the temporary storage.</li>
+<li>Redis is used to cache data in Nodejs</li>
+</ul>
+<h1 id="serverless">Serverless</h1>
+<h2 id="advantages-and-disadvantages-of-lambda">Advantages and Disadvantages of Lambda</h2>
 
 
 
@@ -479,7 +738,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "content.code.select"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="assets/javascripts/bundle.ebd0bdb7.min.js"></script>
