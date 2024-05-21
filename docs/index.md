@@ -47,14 +47,27 @@ getData(function(a){
 - Response include an header indicating allowed HTTP methods on the resource.
 - HTTP OPTIONS request is automatically issued by browser.
 
-### What is Cross-Origin Resource Sharing (CORS)?
+### What is CORS?
 
-- CORS is an HTTP header based mechanism that allows a server to indicate any origins.
+- CORS means cross origin resource sharing.
+- It is a security feature that allows the webapplications from one domain to request the resources like API's from other domain
+- CORS works by adding http headers to control which origins have accesss to the resource and under what condition.
 
 ### What is package.json file?
 
-- The package.json file in Nodejs projects contains valuable information, such as project metadata and dependencies.
+- The package.json is a metadata file that contains information about project, such as name, description and most important dependencies.
 - File used to managing project modules, scripts, version control.
+- File is used by npm to install, manage, update dependencies.
+
+### What is package.lock.json file?
+
+- The package.lock.json file that npm generates after installing packages.
+- This file contain details description of dependencies, including versions and dependencies of dependencies.
+
+### What is authrentication vs authorization?
+
+- **Authentication**: is the process of verifying who the user is.
+- **Authorization**: is the process of verifying what they have access to. What files and data user has access to.
 
 ### What is JWT?
 
@@ -95,8 +108,6 @@ getData(function(a){
 
 ### What is Behaviour-Driven Development (BDD)?
 
--
-
 ## Serverless
 
 ### Advantages and Disadvantages of Lambda?
@@ -107,3 +118,9 @@ getData(function(a){
 
 - Layers usually contain library dependencies, a custom runtime, or configuration files.
 - Layers can be used to reduce size of deployment, separate core function logic, share dependencies, lambda console code editor.
+
+## Cloud Services
+
+## Messaging queues
+
+## CICD Tools
