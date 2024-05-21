@@ -1,6 +1,6 @@
 ## Write a program to print matrix
 
-``` js
+```js
 1 2 3
 4 5 6
 7 8 9
@@ -8,7 +8,7 @@
 
 ## Write a program to print matrix
 
-``` js
+```js
 1 5 9
 2 6 10
 3 7 11
@@ -17,7 +17,7 @@
 
 ## Write a function that returns boolean 'true'/'false' based on whether or not the argument passed to it is an Armstrong number.
 
-``` js
+```js
 /* Definition of an Armstrong Number:
 A number where the sum of its own digits raised to the power of number of digits (n) is equal to same number
 
@@ -31,7 +31,7 @@ So, in this case the function should return true*/
 
 ## Console output of code
 
-``` js
+```js linenums="1"
 let a = true;
 setTimeout( () => a = false, 100);
 while(a) { console.log(a) }
@@ -40,7 +40,7 @@ console.log(“script ended”);
 
 ## Complete the function
 
-``` js
+```js linenums="1"
 /*
 ArrayAdditionI(arr) take the array of numbers stored in arr and return the string true if any combination of numbers in the array can be added up to equal the largest number in the array, otherwise return the string false.
 
@@ -50,24 +50,34 @@ The array will not be empty, will not contain all the same elements, and may con
 */
 
 function ArrayAdditionI(arr) {
-    // Write code here...
+  // Write code here...
 }
 
 console.log("-----");
-console.log(ArrayAdditionI([1,2,3,5,4])); // ==> true
-console.log(ArrayAdditionI([21,10,12,9,2])); // ==> true
-console.log(ArrayAdditionI([4,6,23,10,1,3])); // ===> true
-console.log(ArrayAdditionI([5,7,16,1,2])); // ===> false
-console.log(ArrayAdditionI([3,5,-1,8,12])); // ===> true
+console.log(ArrayAdditionI([1, 2, 3, 5, 4])); // ==> true
+console.log(ArrayAdditionI([21, 10, 12, 9, 2])); // ==> true
+console.log(ArrayAdditionI([4, 6, 23, 10, 1, 3])); // ===> true
+console.log(ArrayAdditionI([5, 7, 16, 1, 2])); // ===> false
+console.log(ArrayAdditionI([3, 5, -1, 8, 12])); // ===> true
 ```
 
 ## Node JS Age Counting Challenge
 
-``` js
+```js
 // As per response of get call count the total number of ages who has age value above or equal to 50.
 
-const https = require('https');
-https.get('https://coderbyte.com/api/challenges/json/age-counting', (resp) => {
-    // Write code here...
-})
+const https = require("https");
+https.get("https://coderbyte.com/api/challenges/json/age-counting", (resp) => {
+  // Write code here...
+});
+```
+
+## Write a program to remove duplicates from an array?
+
+```js
+const removeDuplicates = (array) => {
+  // Write code here...
+};
+
+removeDuplicates([1, 2, 1, 3, 4, 2, 2, 1, 5, 6]);
 ```
