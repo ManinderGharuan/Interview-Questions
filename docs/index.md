@@ -14,7 +14,7 @@ The event loop allows nodejs to perform non-blocking I/O operations.
 - Event loop allow us to use callbacks and promises.
 
 <figure markdown="span">
-  ![Event Loop Diagram](/images/event-loop.png)
+  ![Event Loop Diagram](/interview-questions/images/event-loop.png)
 </figure>
 
 ### What is callback hell?
@@ -79,7 +79,7 @@ getData(function(a){
 - Microservices are many small services responsible for one functionality.
 
 <figure markdown="span">
-  ![Monolithic vs Microservices](/images/monolithic-and-microservices-architecture.jpg)
+  ![Monolithic vs Microservices](/interview-questions/images/monolithic-and-microservices-architecture.jpg)
 </figure>
 
 ### What are the middleware functions?
