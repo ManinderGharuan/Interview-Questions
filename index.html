@@ -379,9 +379,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#what-is-cross-origin-resource-sharing-cors" class="md-nav__link">
+  <a href="#what-is-cors" class="md-nav__link">
     <span class="md-ellipsis">
-      What is Cross-Origin Resource Sharing (CORS)?
+      What is CORS?
     </span>
   </a>
   
@@ -391,6 +391,24 @@
   <a href="#what-is-packagejson-file" class="md-nav__link">
     <span class="md-ellipsis">
       What is package.json file?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-packagelockjson-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is package.lock.json file?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-authrentication-vs-authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is authrentication vs authorization?
     </span>
   </a>
   
@@ -521,6 +539,33 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloud Services
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#messaging-queues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Messaging queues
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cicd-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      CICD Tools
+    </span>
+  </a>
   
 </li>
       
@@ -672,9 +717,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#what-is-cross-origin-resource-sharing-cors" class="md-nav__link">
+  <a href="#what-is-cors" class="md-nav__link">
     <span class="md-ellipsis">
-      What is Cross-Origin Resource Sharing (CORS)?
+      What is CORS?
     </span>
   </a>
   
@@ -684,6 +729,24 @@
   <a href="#what-is-packagejson-file" class="md-nav__link">
     <span class="md-ellipsis">
       What is package.json file?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-packagelockjson-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is package.lock.json file?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-authrentication-vs-authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is authrentication vs authorization?
     </span>
   </a>
   
@@ -817,6 +880,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#cloud-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloud Services
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#messaging-queues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Messaging queues
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cicd-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      CICD Tools
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -888,14 +978,27 @@
 <li>Response include an header indicating allowed HTTP methods on the resource.</li>
 <li>HTTP OPTIONS request is automatically issued by browser.</li>
 </ul>
-<h3 id="what-is-cross-origin-resource-sharing-cors">What is Cross-Origin Resource Sharing (CORS)?</h3>
+<h3 id="what-is-cors">What is CORS?</h3>
 <ul>
-<li>CORS is an HTTP header based mechanism that allows a server to indicate any origins.</li>
+<li>CORS means cross origin resource sharing.</li>
+<li>It is a security feature that allows the webapplications from one domain to request the resources like API's from other domain</li>
+<li>CORS works by adding http headers to control which origins have accesss to the resource and under what condition.</li>
 </ul>
 <h3 id="what-is-packagejson-file">What is package.json file?</h3>
 <ul>
-<li>The package.json file in Nodejs projects contains valuable information, such as project metadata and dependencies.</li>
+<li>The package.json is a metadata file that contains information about project, such as name, description and most important dependencies.</li>
 <li>File used to managing project modules, scripts, version control.</li>
+<li>File is used by npm to install, manage, update dependencies.</li>
+</ul>
+<h3 id="what-is-packagelockjson-file">What is package.lock.json file?</h3>
+<ul>
+<li>The package.lock.json file that npm generates after installing packages.</li>
+<li>This file contain details description of dependencies, including versions and dependencies of dependencies.</li>
+</ul>
+<h3 id="what-is-authrentication-vs-authorization">What is authrentication vs authorization?</h3>
+<ul>
+<li><strong>Authentication</strong>: is the process of verifying who the user is.</li>
+<li><strong>Authorization</strong>: is the process of verifying what they have access to. What files and data user has access to.</li>
 </ul>
 <h3 id="what-is-jwt">What is JWT?</h3>
 <ul>
@@ -931,7 +1034,6 @@
 <li>TDD is a software development approach where tests are written before the actual code.</li>
 </ul>
 <h3 id="what-is-behaviour-driven-development-bdd">What is Behaviour-Driven Development (BDD)?</h3>
-<p>-</p>
 <h2 id="serverless">Serverless</h2>
 <h3 id="advantages-and-disadvantages-of-lambda">Advantages and Disadvantages of Lambda?</h3>
 <h3 id="what-is-cold-start-in-lambda">What is cold start in lambda?</h3>
@@ -940,6 +1042,9 @@
 <li>Layers usually contain library dependencies, a custom runtime, or configuration files.</li>
 <li>Layers can be used to reduce size of deployment, separate core function logic, share dependencies, lambda console code editor.</li>
 </ul>
+<h2 id="cloud-services">Cloud Services</h2>
+<h2 id="messaging-queues">Messaging queues</h2>
+<h2 id="cicd-tools">CICD Tools</h2>
 
 
 
