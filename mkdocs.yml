@@ -50,8 +50,10 @@ markdown_extensions:
 
 nav:
   - NodeJS: index.md
+  - Database: database.md
   - Javascript: javascript.md
   - ReactJS: reactjs.md
+  - HTML/CSS: htmlcss.md
   - Problems: problems.md
 
 copyright: >
