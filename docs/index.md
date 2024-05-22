@@ -1,5 +1,46 @@
 ## Nodejs
 
+### What is package.json file?
+
+- The package.json is a metadata file that contains information about project, such as name, description and most important dependencies.
+- File used to managing project modules, scripts, version control.
+- File is used by npm to install, manage, update dependencies.
+
+### What is package.lock.json file?
+
+- The package.lock.json file that npm generates after installing packages.
+- This file contain details description of dependencies, including versions and dependencies of dependencies.
+
+### What is preflight request?
+
+- A preflight request is a ==CORS== request that checks to see if the CORS protocol is understood.
+- Preflight is a OPTIONS request.
+
+### Use of options method in http?
+
+- HTTP OPTIONS method is used to request information about the communication options available for the target resource.
+- Response include an header indicating allowed HTTP methods on the resource.
+- HTTP OPTIONS request is automatically issued by browser.
+
+### What is CORS?
+
+- CORS means cross origin resource sharing.
+- It is a security feature that allows the webapplications from one domain to request the resources like API's from other domain
+- CORS works by adding http headers to control which origins have accesss to the resource and under what condition.
+
+### Difference between import and require?
+
+- Require is non-lexical, it stays where they have put the file.
+- Import is lexical, it gets sorts to the top of the file.
+
+### Nodejs is single-threaded. Can I make main thread as multi-thread?
+
+- We can't directly convert main thread to multi-threaded execution.
+- Nodejs provides mechanisms to achieve similar effects by using ==event loop== for non-blocking I/O.
+- Nodejs offers experimental module called ==Worker Threads==.
+- **Worker Threads** creates child processes for CPU-bound tasks, share memory with main thread, enable paraller processes.
+- We can also achive this by using cluster.
+
 ### How to handle concurrency in NodeJS?
 
 - Nodejs can support concurrency by concept of event, callbacks, Promises and async/await.
@@ -35,34 +76,6 @@ getData(function(a){
     });
 });
 ```
-
-### What is preflight request?
-
-- A preflight request is a ==CORS== request that checks to see if the CORS protocol is understood.
-- Preflight is a OPTIONS request.
-
-### Use of options method in http?
-
-- HTTP OPTIONS method is used to request information about the communication options available for the target resource.
-- Response include an header indicating allowed HTTP methods on the resource.
-- HTTP OPTIONS request is automatically issued by browser.
-
-### What is CORS?
-
-- CORS means cross origin resource sharing.
-- It is a security feature that allows the webapplications from one domain to request the resources like API's from other domain
-- CORS works by adding http headers to control which origins have accesss to the resource and under what condition.
-
-### What is package.json file?
-
-- The package.json is a metadata file that contains information about project, such as name, description and most important dependencies.
-- File used to managing project modules, scripts, version control.
-- File is used by npm to install, manage, update dependencies.
-
-### What is package.lock.json file?
-
-- The package.lock.json file that npm generates after installing packages.
-- This file contain details description of dependencies, including versions and dependencies of dependencies.
 
 ### What is authrentication vs authorization?
 
@@ -100,7 +113,27 @@ getData(function(a){
 
 ### In API I have 3 database queries 2 seconds response each and API takes 6 deconds to execute. How we can optimize this?
 
-### Nodejs is single threaded. Can I make main thread as multithread?
+```js
+const query = () => {
+  new Promise((resolve) => {
+    setTimeout(resolve, 2000);
+  });
+};
+
+(async () => {
+  await query();
+  await query();
+  await query();
+})(); // Response time 6 seconds
+```
+
+- We can optimize response time by using Promise.all
+
+```js
+(async () => {
+  await Promise.all(query(), query(), query());
+})(); // Response time 2 seconds
+```
 
 ### What is Test Driven Development (TDD)?
 
