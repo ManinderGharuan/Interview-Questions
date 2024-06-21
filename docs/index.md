@@ -6,9 +6,9 @@
 - File used to managing project modules, scripts, version control.
 - File is used by npm to install, manage, update dependencies.
 
-### What is package.lock.json file?
+### What is package-lock.json file?
 
-- The package.lock.json file that npm generates after installing packages.
+- The package-lock.json file that npm generates after installing packages.
 - This file contain details description of dependencies, including versions and dependencies of dependencies.
 
 ### What is preflight request?
@@ -45,6 +45,7 @@
 
 - Nodejs can support concurrency by concept of event, callbacks, Promises and async/await.
 - Nodejs uses an event loop to maintain concurrency and perform non-blocking I/O operations.
+- By using Promise.all we can handle concurrency.
 
 ### What is Event Loop?
 
@@ -77,7 +78,7 @@ getData(function(a){
 });
 ```
 
-### What is authrentication vs authorization?
+### What is authentication vs authorization?
 
 - **Authentication**: is the process of verifying who the user is.
 - **Authorization**: is the process of verifying what they have access to. What files and data user has access to.
