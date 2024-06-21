@@ -1,5 +1,94 @@
 ## Javascript
 
+### What is functional programming?
+
+#### First class functions?
+
+- Functions that treaded as other variable, passed as an argument or return by another function.
+
+#### What is a pure function?
+
+- Pure functions are the functions which will return same output for the same arguments passed to the function.
+- This is not have any side effects that modify
+  - Global variables
+  - Writing to files
+  - Printing to the console
+  - Making network calls
+- We can predict the output of pure function.
+- Pure functions are easier to test.
+
+```js linenums="1"
+// Pure function
+const add = (x, y) => x + y;
+
+add(2, 4); // 6
+add(2, 4); // 6
+
+// Impure function
+let x = 2;
+
+const add = (y) => {
+  x += y;
+};
+
+add(4); // x === 6 (the first time)
+add(4); // x === 10 (since the global x was incremented in the previous call)
+```
+
+#### What are higher order functions?
+
+- Function that accepts functions as parameters and/or returns a function.
+- Callback functions can be passed as a parameter in higher order function.
+- It is usefull to create reusable code.
+
+```js linenums="1"
+const radius = [1, 2, 3];
+
+// logic to clculate area
+const area = function (radius) {
+  return Math.PI * radius * radius;
+};
+
+// logic to calculate diameter
+const diameter = function (radius) {
+  return 2 * radius;
+};
+
+// a reusable function to calculate area, diameter, etc
+const calculate = function (radius, logic) {
+  const output = [];
+  for (let i = 0; i < radius.length; i++) {
+    output.push(logic(radius[i]));
+  }
+  return output;
+};
+
+console.log(calculate(radius, area));
+console.log(calculate(radius, diameter));
+
+// logic to calculate circumeference
+const circumeference = function (radius) {
+  return 2 * Math.PI * radius;
+};
+
+console.log(calculate(radius, circumeference));
+```
+
+### Difference between regular function and arrow function?
+
+#### Arrow functions
+
+- Simple and shorter way to create functions.
+- Cannot access before they are initialised.
+- Not have their own ==this== context. Capture this value from his parent in which arrow function created.
+- Cannot used as contructor.
+
+#### Regular functions
+
+- Hoisted to the top. You can access and call them even before they are declared.
+- Have their own ==this== context.
+- Can create new instance using ==new== keyword.
+
 ### What is difference between map() and forEach()?
 
 - ap method will return a new array with transformed values.
@@ -71,7 +160,7 @@ console.log(a, b); // 1, 2
 
 ### What is a closure?
 
-- Closure is a funcation which will return another function along with outer function environment.
+- Closure is a function which will return another function along with outer function environment.
 
 ```js linenums="1"
 function Outer() {
