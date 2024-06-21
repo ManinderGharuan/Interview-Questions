@@ -110,6 +110,8 @@ export default ParentComponent;
 
 ## Redux
 
-## What are reducers?
+### What are reducers?
+
+### Is reducer pure function?
 
 ### Can we dispatch an action in reducer?
